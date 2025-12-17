@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive data - DO NOT commit real student data
+/Users/jeffsolin/Downloads/
+*.xlsx
+*.csv
+
+# Keep only test data
+!test_data.csv
+!*Income\ and\ Expense\ Tracking.xlsx
