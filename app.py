@@ -235,9 +235,9 @@ def highlight_keywords(text):
 
     highlighted_text = str(text)
     for keyword in red_flags:
-        # Case-insensitive replacement with highlighted version
+        # Case-insensitive replacement with highlighted version (whole words only)
         import re
-        pattern = re.compile(re.escape(keyword), re.IGNORECASE)
+        pattern = re.compile(r'\b' + re.escape(keyword) + r'\b', re.IGNORECASE)
         highlighted_text = pattern.sub(
             f'<span style="background-color: #ffcccc; padding: 2px 4px; border-radius: 3px; font-weight: bold;">{keyword}</span>',
             highlighted_text
